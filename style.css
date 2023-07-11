@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #081a2b;
+  width: 100%;
+  color: #87d831;
+  font-family: "Roboto Slab", serif;
+}
+
+#info-display {
+  text-transform: uppercase;
+}
+
+#player {
+  text-transform: uppercase;
+}
+
+#gameboard {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  position: relative;
+  z-index: -1;
+}
+
+path {
+  position: relative;
+  z-index: -2;
+}
+
+.piece {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.beige {
+  background: #f9e7a7;
+}
+
+.darkGreen {
+  background: #135f4b;
+}
+
+.black {
+  fill: #000;
+}
+
+.white {
+  fill: #fff;
+}
+
+svg {
+  filter: drop-shadow(3px 5px 5px rgb(0 0 0 / 0.6));
+  cursor: pointer;
+}
+
+svg:hover {
+  transform: scale(1.15);
+  transition: 0.2s ease-in;
+}
